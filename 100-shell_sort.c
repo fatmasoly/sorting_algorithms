@@ -28,3 +28,18 @@ j -= interval;
 print_array(array, size);
 }
 }
+
+/**
+ * swap_elements - Swaps two integer values.
+ * @n1: Pointer to the first integer.
+ * @n2: Pointer to the second integer.
+ *
+ * Return: No return value (void).
+ */
+void swap_elements(int *n1, int *n2)
+{
+int temp;
+temp = *n1;
+*n1 = *n2;
+*n2 = temp;
+}
