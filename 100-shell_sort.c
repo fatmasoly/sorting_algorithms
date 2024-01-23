@@ -10,7 +10,7 @@
 void shell_sort(int *array, size_t size)
 {
 size_t interval, i, j;
-if (array == NULL)
+if (array == NULL || size < 2)
 return;
 for (interval = 1; interval < (size / 3);)
 interval = interval * 3 + 1;
